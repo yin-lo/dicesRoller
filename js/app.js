@@ -27,7 +27,7 @@ while (isNaN(diceQuantity)) {
 	diceQuantity = parseInt(prompt(`Tape un nombre pour savoir combien de dés lancer (maximum 5 dés)`));
 }
 
-// on borne les réponses entre 1 et 5 (si l'utilisateur note <1 on prend 1 // si l'utilisateir note>5, on prend 5)
+// on borne les réponses entre 1 et 5 (si l'utilisateur note <1 on prend 1 // si l'utilisateur note>5, on prend 5)
 diceQuantity = Math.max(1, Math.min(5, diceQuantity));
 
 
@@ -37,7 +37,7 @@ dealerElement.classList.add('board');
 dealerElement.id = 'dealer';
 
 
-// relier la réponses au nombre de dés créés
+// relier la réponse au nombre de dés créés
 for (let index = 1; index <= diceQuantity; index++) {
 	createDice(playerElement);
 	createDice(dealerElement);
